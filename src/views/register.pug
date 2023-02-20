@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/login.css")
+        title Register
+    body 
+        .wrapper 
+            .container 
+                h1 Register 
+                p #{error}
+                form(method="post")
+                    input(type="text", name="realName", placeholder="Name", value= realName ? realName : '', required)
+                    input(type="email", name="email", placeholder="Email", value= email ? email : '', required)
+                    input(type="date", name="birthDate", placeholder="Date of birth", value= birthDate ? birthDate : '', required)
+                    input(type="text", name="login", placeholder="Login", value= login ? login : '', require)
+                    input(type="password", name="password", placeholder="Password", required)
+                    select(name="country")
+                        for country in countries
+                            option(value=country.name)= country.name
+                    label(for="check")
+                        input#check(type="checkbox", checked="true", required)
+                        | Agree with terms and conditions 
+                    input#submit(type="submit", value="Register")
+                a(href="/login") Already have an account? Login here! 
+
+            script. 
+                let check = document.getElementById("check")
+                let btn = document.getElementById("submit")
+
+                check.addEventListener('change', (event) => {
+                    if (event.currentTarget.checked) {
+                        btn.disabled = false;
+                    } else {
+                        btn.disabled = true;
+                    }
+                })
+                

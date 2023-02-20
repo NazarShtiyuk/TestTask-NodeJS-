@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin: 100px auto;
+    background-color: rgb(59, 186, 186);
+    padding: 100px 100px;
+    border-radius: 15px;
+    border: 1px solid rgb(236, 204, 204);
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    display: block;
+    padding: 15px 30px;
+    background-color: #1972ad;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff
+}

@@ -1,0 +1,8 @@
+{
+    "port": 3000,
+    "PGHOST": "ep-summer-union-569240.eu-central-1.aws.neon.tech",
+    "PGDATABASE": "neondb",
+    "PGUSER": "nazarshtiyuk",
+    "PGPASSWORD": "KihnB5jHfy2L",
+    "ENDPOINT_ID": "ep-summer-union-569240"
+}
